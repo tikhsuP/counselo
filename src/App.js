@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+
+class App extends Component {
+  render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <button className="btn btn-danger">src/App.js</button> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Form className="login-form">
+    <h1><span className="font-weight-bold">Counselo</span>.in</h1> 
+    <h3 className="text-center">Login or Signup</h3>
+    <FormGroup>
+      <Label>
+        Email
+      </Label>
+      <Input type="email" placeholder="Email"></Input>
+    </FormGroup>
+    <FormGroup>
+      <Label>
+        Password
+      </Label>
+      <Input type="password" placeholder="Password"></Input>
+    </FormGroup>
+    <Button className="btn-lg btn-dark btn-block">
+      Log in
+    </Button>
+    </Form>
   );
+ }
 }
 
 export default App;
