@@ -6,9 +6,6 @@ import React, { Component } from 'react';
 //import Landing from './components/Landing';
 //import UserForm from './components/UserForm';
 import Profile from './components/Profile';
-
-
-
 import './App.css';
 
 class App extends Component {
